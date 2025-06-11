@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>2301020017 Portfolio Perancangan Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+    .about-section {
+        background-color: #d48a1af5;
+        color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        margin: 2rem auto;
+        max-width: 1000px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .about-section .profile-pic {
+        flex-shrink: 0;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .about-section .profile-pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .about-section .about-content {
+        flex-grow: 1;
+    }
+    .about-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+    }
+    .about-section h2::after {
+        content:"";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: #f1c40f;
+        margin-top: 0.5rem;
+    }
+    .about-section p {
+        line-height: 1.6;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Widuri Eka Febriyanti</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="2301020017_portofolio.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skill.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="project.html">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="2301020017_portofolio.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <!-- Bagian About Me -->
+            <div class="about-section" data-aos="fade-up" data-aos-duration="1000">
+                <div class="profile-pic">
+                    <img src="fotoku1.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-content">
+                    <h2>Contact Us</h2>
+                    <p><i class="fas fa-mobile-alt"></i> 0899-4095-954</p>
+                    <p><i class="far fa-envelope-open"></i> widuriekafebriyanti@gmail.com</p>
+                    <p><i class="fa-brands fa-facebook"></i> Widuri Eka Febriyanti</p>
+                    <p><i class="fa-brands fa-github"></i> widuriekaf</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+</html>
