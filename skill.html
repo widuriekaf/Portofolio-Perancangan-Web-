@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>2301020017 Portfolio Perancangan Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Widuri Eka Febriyanti</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="2301020017_portofolio.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skill.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="project.html">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="2301020017_portofolio.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <section id="skills">
+                    <h2 data-aos="fade-up" data-aos-duration="1000">-----Tech Stack-----</h2>
+                    <div class="skills-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="skill-card"><img src="html.png" alt="HTML"><span>HTML</span></div>
+                        <div class="skill-card"><img src="css.png" alt="CSS"><span>CSS</span></div>
+                        <div class="skill-card"><img src="php.webp" alt="PHP"><span>PHP</span></div>
+                        <div class="skill-card"><img src="java2.webp" alt="Java"><span>Java</span></div>
+                        <div class="skill-card"><img src="py.webp" alt="Python"><span>Python</span></div>
+                        <div class="skill-card"><img src="js.webp" alt="JavaScript"><span>JavaScript</span></div>
+                        <div class="skill-card"><img src="bs logo.png" alt="Bootstrap"><span>Bootstrap</span></div>
+                        <div class="skill-card"><img src="mysql.png" alt="MySQL"><span>MySQL</span></div>
+                        <div class="skill-card"><img src="c.webp" alt="C"><span>C</span></div>
+                        <div class="skill-card"><img src="c++.svg" alt="C++"><span>C++</span></div>
+                    </div>
+
+                    <section id="tools">
+                        <h2 data-aos="fade-up" data-aos-duration="1000">-----Tools-----</h2>
+                        <div class="skills-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="skill-card"><img src="github.png" alt="GitHub"><span>GitHub</span></div>
+                            <div class="skill-card"><img src="mysql.png" alt="MySQL"><span>MySQL</span></div>
+                            <div class="skill-card"><img src="netB.webp" alt="NetBeans"><span>NetBeans</span></div>
+                            <div class="skill-card"><img src="vsc.webp" alt="Visual Studio Code"><span>Visual Studio Code</span></div>
+                            <div class="skill-card"><img src="xampp.svg" alt="XAMPP"><span>XAMPP</span></div>
+                        </div>
+                </section>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
