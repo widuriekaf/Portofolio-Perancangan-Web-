@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>2301020017 Portfolio Perancangan Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        section h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        section p {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 0rem;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 0;
+            margin-top: 0rem;
+        }
+
+        .project {
+            flex: 0 0 auto;
+            background-color: #fabc74;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 0.6rem;
+            width: 180px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            width: 90%;
+            border-radius: 6px;
+            margin-bottom: 0.3rem;
+        }
+
+        .project h3 {
+            font-size: 1rem;
+            margin: 0.3rem 0 0.2rem 0;
+        }
+
+        .project p {
+            font-size: 0.85rem;
+            margin: 0.1rem 0;
+        }
+
+        .project-icons a {
+            color: #007bff;
+            margin: 0 0.3rem;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .project-icons a:hover {
+            color: #0056b3;
+        }
+
+        .projects-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .projects-container::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Widuri Eka Febriyanti</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="2301020017_portofolio.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skill.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="project.html">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="2301020017_portofolio.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <!-- Memusatkan teks utama -->
+            <h1>Past Project Experience</h1>
+            <p>Explore the projects I've worked on so far</p>
+            <div class="main-container">
+                <div class="projects-container">
+                    <div class="project" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="prj1.jpg" alt="Personal Website">
+                        <h3>Projek Harian SMK</h3>
+                        <p>Aplikasi perpustakaan Berbasis Web</p>
+                        <p><strong>Bootstrap, MySQL</strong></p>
+                        <div class="project-icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <img src="ser1.jpg" alt="Sahabat Muslim">
+                        <h3>Sertifikat Penghargaan</h3>
+                        <p>Juara 1 Tingkat Umum</p>
+                        <p><strong>kabupaten/kota</strong></p>
+                        <div class="project-icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="prj2.jpg" alt="Personal Website">
+                        <h3>Projek akhir Magang SMK</h3>
+                        <p>Aplikasi Inventori Barang</p>
+                        <p><strong>Bootstrap, MySQL</strong></p>
+                        <div class="project-icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <img src="ser2.jpg" alt="SISTEKDES">
+                        <h3>Sertifikat Penghargaan</h3>
+                        <p>Partisipasi peserta perwakilan provinsi</p>
+                        <p><strong>Nasional, Pekanbaru 2017</strong></p>
+                        <div class="project-icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-link"></i></a> 
+                        </div>
+                    </div>
+                    <div class="project" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="prj3.jpg" alt="Personal Website">
+                        <h3>Projek akhir Pemrograman Berorientasi Objek</h3>
+                        <p>Aplikasi Klinik Kesehatan</p>
+                        <p><strong>Bootstrap, MySQL</strong></p>
+                        <div class="project-icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
